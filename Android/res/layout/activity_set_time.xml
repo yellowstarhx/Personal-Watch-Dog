@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetTimeActivity"
+    android:background="@color/bgc">
+
+    <ImageView android:id="@+id/teamIcon"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/awscloud"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Select start time:"
+        android:layout_marginLeft="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="YYYY"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="MM"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="DD"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+
+        <EditText
+            android:id="@+id/hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="  HH  "
+            android:maxLength="2"
+            android:inputType="number"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="MM"
+            android:maxLength="2"
+            android:inputType="number"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="SS"
+            android:maxLength="2"
+            android:inputType="number"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:background="@color/yellow"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="50dp"/>
+
+
+</LinearLayout>
