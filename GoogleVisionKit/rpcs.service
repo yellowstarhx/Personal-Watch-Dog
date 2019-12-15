@@ -1,0 +1,15 @@
+[Unit]
+Description=RPC Server
+Requires=dev-vision_spicomm.device
+After=dev-vision_spicomm.device
+Wants=aiy-board-info.service
+After=aiy-board-info.service
+
+[Service]
+Type=simple
+Restart=no
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/rpcsn.py
+
+[Install]
+WantedBy=multi-user.target
