@@ -1,4 +1,4 @@
-# Private Neighborhood Security System
+# Personal Watch Dog – A Smart Home Security Surveillance System
 USC EE 542 Cloud Computing Fall 2019  
 Team: Got 6  
 
